@@ -155,8 +155,30 @@ img {
 }
 
 /*==================== NAV ====================*/
+nav{
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_logo,.nav_toggle{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
 
+.nav_logo:hover{
+  color: var(--first-color);
+}
 
+.nav_toggle{
+  font-size: 1.1rem;
+  cursor:pointer;
+}
+
+.nav_toggle:hover{
+  color: var(--first-color);
+}
 /* show menu */
 
 
