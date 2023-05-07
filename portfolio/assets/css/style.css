@@ -1,0 +1,46 @@
+/*==================================Google Fonts================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================================Colors======================================*/
+:root{
+--header-height: 3rem;
+--hue-color: 237; /*dark blue*/
+--body-color: hsl(var(--hue-color),98%,3%);
+}
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--body-color); 
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav_menu ul{
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+}
+.nav_menu a{
+  color: yellow;
+  text-decoration: none;
+}
+.nav_menu li {
+  padding-right: 40px;
+  color: yellow;
+}
+
+
