@@ -3,9 +3,9 @@
 
 /*==================================Colors======================================*/
 :root{
---header-height: 3rem;
---hue-color: 237; /*dark blue*/
---body-color: hsl(var(--hue-color),98%,3%);
+  --background-color: #081b29;
+  --bg2-color: #112e42;
+  --text-color: #ededed;
 }
 @media screen and (min-width: 968px) {
   :root {
@@ -20,27 +20,33 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 body {
-  background-color: var(--body-color); 
-  background-size: cover;
+  font-family: 'Poppins',sans-serif;
+  background-color: var(--background-color);
 }
 .header {
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .nav_menu ul{
   margin-left: auto;
   list-style: none;
   display: flex;
 }
+
 .nav_menu a{
-  color: yellow;
+  color: var(--text-color);
   text-decoration: none;
 }
 .nav_menu li {
-  padding-right: 40px;
-  color: yellow;
+  padding-right: 20px;
 }
-
+.header #name {
+  margin-right: auto;
+  margin-left: 0;
+}
 
