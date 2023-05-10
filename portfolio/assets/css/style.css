@@ -4,8 +4,10 @@
 /*==================================Colors======================================*/
 :root{
   --background-color: #081b29;
+  --secound-bg-color:#323946;
   --bg2-color: #112e42;
   --text-color: #ededed;
+  --main-color:##0ef;
 }
 @media screen and (min-width: 968px) {
   :root {
@@ -49,4 +51,32 @@ body {
   margin-right: auto;
   margin-left: 0;
 }
+/*==================================Home======================================*/
+.home_content {
+  color: var(--text-color);
+  margin-top: 60px;
+  width: 50vw;
+  font-size: 1.2rem;
+}
+.social_media  img{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem;
+}
+#resume {
+  color: var(--text-color);
+  border-width: 2px;
+  border-radius: 15px;
+  border-style:solid;
+  border-color: lightblue;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
 
