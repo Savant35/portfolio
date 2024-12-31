@@ -214,29 +214,25 @@ the website, in dark theme
     width: 100%;
     top: -100%; /*hidean element above its container by 100% of its own height.*/
     left: 0;
-    background-color: hsla(0, 0%, 0%, .75);
+    background-color: hsla(0, 0%, 0%, .45);
     text-align: center;
-    backdrop-filter: blur(8px);
-    transition: top .4;
+    backdrop-filter: blur(20px);
+    transition: top .4s;
   }
 }
 
 .nav__title,
-.nav__name,
 .nav__close {
-  color: var(--white--color);
+  color: var(--white-color);
 }
 
 .nav__title{
   display: block;
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.nav__name {
-  display:none;
-}
 
 .nav__list {
   display: flex;
@@ -274,14 +270,16 @@ the website, in dark theme
 .nav__close {
   position: absolute;
   font-size: 1.5rem;
-  top: 1rem;
-  right: 1.5rem;
+  top: .2rem;
+  right: .1rem;
   cursor: pointer;
 }
 
 
 /* Show menu */
-
+.show-menu{
+  top: 0;
+}
 
 /* Add shadow header */
 
