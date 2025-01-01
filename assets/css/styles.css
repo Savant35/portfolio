@@ -169,18 +169,18 @@ the website, in dark theme
 }
 
 /*=============== HEADER & NAV ===============*/
-.header {
+header {
   position: fixed;
   width:100%;
   top:0;
   left:0;
   background-color: var(--body-color);
-  z-index: var(--z-fxed);
+ z-index: var(--z-fixed);
   transition: box-shadow .4s;
 }
 
 .nav{
-  postion: relative;
+ position: relative;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -283,14 +283,152 @@ the website, in dark theme
 
 /* Add shadow header */
 
+.shadow-header {
+  box-shadow: 0 1px 1rem hsla(0, 0%, 0%, .12);
+}
+
 
 /* Active link */
 
 
 /*=============== HOME ===============*/
+.home__container {
+  padding-top: 2rem;
+}
 
+.home__name {
+  font-size: var(--biggest-font-size);
+  text-align: center;
+}
+
+.home__profile {
+  position: relative;
+  justify-self: center;
+}
+
+.home__image {
+  width: 16rem;
+}
+
+
+.home__img {
+  position: relative;
+  z-index: 10;
+}
+
+.home__shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -.75rem;
+  right: -.75rem;
+  border: .5rem solid var(--black-color);
+  z-index: 5;
+}
+
+.home__arrow,
+.home__line{
+  position: absolute;
+  filter: invert(1);
+  width: 4rem;
+  transition: filter .4s;
+}
+
+.home__arrow {
+  left: 40%;
+  bottom: -4rem;
+}
+
+.home__line {
+  right: -2rem;
+  bottom:-.5rem;
+}
+
+.home__profile .geometric-box {
+  top: 2.5rem;
+  left: -.75rem;
+  z-index: 10;
+
+}
+
+.home__social{
+  height: max-content;
+  position: absolute;
+  right: -3rem;
+  top: 0;
+  bottom:0;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.home__social-link {
+  background-color: var(--black-color);
+  font-size: 1.25rem;
+  color: var(--white-color);
+  align-items:center;
+  transition: background-color .3s;
+}
+
+.home__social-link:hover {
+  background-color: var(--black-color-light);
+}
+
+.home__info {
+  margin-top: 3rem;
+}
+
+.home__description {
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+}
+
+.home__scroll{
+  display: block;
+  width:max-content;
+  margin: 0 auto;
+}
+
+.home__scroll-text{
+  display: none;
+}
+.home__scroll-box{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  width:2rem;
+  height: 36px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color .4s;
+}
+
+.home__scroll-box i {
+  animation: scroll-down 2s infinite;
+}
 
 /* Animate scroll icon */
+
+@keyframes scroll-down {
+  0%{
+    transform: translateY(-1.5rem);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-.1rem);
+    opacity:0;
+  }
+}
 
 
 /*=============== BUTTON ===============*/
