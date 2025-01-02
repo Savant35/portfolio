@@ -26,15 +26,32 @@ nav.forEach(n => n.addEventListener('click', action)); /*loops through all eleme
 
 /*=============== SHADOW HEADER ===============*/
 
-  const shadowHeader = () => {
-    const header = document.getElementById('header')
+/* Shadow header on scroll */
+const shadowHeader = () => {
+  const header = document.getElementById('header');
+  if (!header) return; // Stop if header is missing
 
-    this.scrollY >= 50 ? header.classList.add('shadow-header')
-                       : header.classList.remove('shadow-header')
+  if (window.scrollY >= 50) {
+    if (!header.classList.contains('shadow-header')) {
+      header.classList.add('shadow-header');
+    }
+  } else {
+    if (header.classList.contains('shadow-header')) {
+      header.classList.remove('shadow-header');
+    }
   }
-  window.addEventListener('scroll', shadowHeader);
+};
 
+// Using debounce for better performance
+const debounce = (func, delay) => {
+  let timeout;
+  return () => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(), delay);
+  };
+};
 
+window.addEventListener('scroll', debounce(shadowHeader, 100));
   /*=============== EMAIL JS ===============*/
 
 
