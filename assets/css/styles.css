@@ -289,6 +289,12 @@ header {
 
 
 /* Active link */
+.active-link {
+  color: var(--white-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 
 /*=============== HOME ===============*/
@@ -862,6 +868,16 @@ header {
   opacity: 1;
   top: -16px;
 }
+/*
+.contact__message {
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
+*/
+
 
 
 /*=============== FOOTER ===============*/
