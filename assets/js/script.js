@@ -134,3 +134,14 @@ if (selectedTheme) {
 
 
   /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 300
+});
+
+sr.reveal(`.home__profile, .contact__mail`, { origin: 'right' })
+sr.reveal(`.home__name, .home__info ,.contact__data`, { origin: 'left' })
+sr.reveal(`.services__card, .projects__card`, { interval: 100 })
+
