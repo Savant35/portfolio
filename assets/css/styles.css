@@ -992,7 +992,7 @@ header {
 
 /* For large devices */
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1151px) {
   .container {
     margin-inline: auto;
   }
@@ -1102,7 +1102,7 @@ header {
 
 .home__description {
   position: relative;
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: 2.5rem; /* Adjusted for better spacing */
   padding-left: 3rem;
 }
@@ -1160,6 +1160,77 @@ header {
   font-size: 1.5rem;
   padding: .5rem;
 }
+
+.about__container {
+ grid-template-columns: 440px 525px;
+ gap: 1rem 9rem;
+ align-items: center; 
+ padding-block: 1rem; 
+}
+
+.about__photo{
+  order: -1;
+  grid-row: 1/3;
+}
+
+.about__image {
+  min-width: 350px;
+  max-width: 450px;
+}
+
+.about__img{
+  border: 8px solid var(--white-color);
+}
+
+.about__shadow{
+  width: 240px;
+  height: 415px;
+  top: -4rem;
+  right: -5.5rem;
+}
+
+.about__profile .geometric-box {
+  right: -4rem;
+  top: 4.5rem;
+}
+
+.about__line {
+  width: 80px;
+  right: -2rem;
+  top: 10rem;
+}
+
+.about__container .section__title-1 {
+  align-self: flex-end;
+  margin-inline: 0;
+}
+.about__info {
+  align-self: flex-start;
+  padding-left: 3rem;
+}
+
+.about__description {
+  font-size: var(--h2-font-size);
+  margin-bottom: 2rem;
+}
+
+.about__description::after{
+  width: 32px;
+  height: 2px;
+  left: -3rem;
+  top: 14px;
+}
+
+.about__list {
+  margin-bottom: 5rem;
+  font-size: var(--h3-font-size);
+}
+
+.about__buttons {
+  justify-content: initial;
+}
+
+
 .projects__container {
   grid-template-columns: repeat(3, 353px);
   padding-block: 3rem 1rem;
