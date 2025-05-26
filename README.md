@@ -57,7 +57,7 @@ $ git clone https://github.com/Savant35/portfolio.git
 $ cd portfolio
 $ open index.html
 ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Preview
 <div align="center">
   <table>
@@ -71,7 +71,7 @@ $ open index.html
     </tr>
   </table>
 </div>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 ## License
 
